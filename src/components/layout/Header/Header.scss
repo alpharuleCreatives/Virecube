@@ -1,0 +1,33 @@
+.header {
+    background-color: #030406; /* Header background color */
+    padding: 1.5rem 2.5rem; /* Add some padding around the header */
+  
+    &__container {
+      display: flex; /* Align items in a row */
+      align-items: center;
+      justify-content: flex-start; /* Align to the left */
+      gap: 1.25rem; /* Space between logo and name */
+      padding-left: 3rem; /* Add some space from the left */
+    }
+  
+    &__logo {
+      width: 34.09px; /* Fixed width of logo container for consistency */
+      height: 42.84px; /* Fixed height of logo container for consistency */
+    }
+  
+    &__logo-image {
+      width: 100%; /* Full width of container */
+      height: 100%; /* Full height of container */
+    }
+  
+    &__name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem; /* Scales dynamically */
+      font-weight: 700;
+      line-height: 2rem;
+      letter-spacing: 0.1px;
+      text-align: left;
+      color: #fff; /* Adjust for better contrast on dark background */
+    }
+  }
+  

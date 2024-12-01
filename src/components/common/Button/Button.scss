@@ -1,0 +1,28 @@
+.button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.675rem;
+  font-weight: 700;
+  width: 10rem;
+  line-height: 0.75rem;
+  letter-spacing: 0.2px;
+  text-align: center;
+  color: #fff;
+  background: #da295d;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 0.625rem 0.25rem;
+  box-shadow: 0px 0px 19.83px 5.95px rgba(218, 41, 93, 0.7);
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  
+    &:hover {
+      background: #fff; /* Invert background on hover */
+      color: #da295d; /* Primary color for text */
+      transform: scale(1.05); /* Slight scaling effect */
+    }
+  
+    &:active {
+      transform: scale(0.95); /* Press effect */
+    }
+  }
+  

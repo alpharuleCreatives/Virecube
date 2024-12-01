@@ -1,0 +1,129 @@
+.footer {
+    background: linear-gradient(279.76deg, #000000 1.9%, #3F3D3D 33.38%, #302E2E 75.27%);
+    padding: 2rem 5.5rem 4rem 5.5rem;
+  
+    &__wrapper {
+      max-width: 1440px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    /* Upper Div */
+    &__upper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 0;
+    }
+  
+    &__branding {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+  
+    &__logo-image {
+      width: 34.09px;
+      height: 43.42px;
+    }
+  
+    &__company-name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #fff;
+    }
+  
+    &__social {
+      display: flex;
+      gap: 1rem;
+    }
+  
+    &__icon {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      color: #fff;
+      text-decoration: none;
+    }
+  
+    /* Separator Line */
+    &__separator {
+      border-top: 2px solid;
+      border-image: linear-gradient(
+        90deg,
+        rgba(255, 255, 255, 0.41) 0%,
+        rgba(105, 103, 103, 0.41) 100%
+      ) 1;
+    }
+  
+    /* Lower Div */
+    &__lower {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+  
+    &__links-row {
+      display: flex;
+          gap: 6rem;
+    }
+  
+    &__links {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+      margin-left: 2rem;
+    }
+  
+    &__links-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: #fff;
+    }
+  
+    &__link {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #bdbdbd;
+      text-decoration: none;
+  
+      &:hover {
+        color: #fff;
+      }
+    }
+  
+    &__contact {
+      display: flex;
+          flex-direction: column;
+          gap: 1rem;
+          margin-left: 16rem;
+    }
+  
+    &__contact-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #bdbdbd;
+    }
+  
+    &__contact-info {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #bdbdbd;
+    }
+  
+    &__copyright {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      color: #bdbdbd;
+      margin-left: 2rem;
+    }
+  }
+  
