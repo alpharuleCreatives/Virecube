@@ -1,0 +1,147 @@
+.contact-us-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #121212;
+    color: #fff;
+    min-height: 100vh;
+    padding: 20px;
+    background-repeat: round;
+  
+    .form-wrapper {
+      background: rgba(31, 31, 31, 0.831372549);
+      padding: 75px 88px 50px;
+      border-radius: 20px;
+      max-width: 76%;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.3);
+    
+  
+      h1 {
+        font-size: 2rem;
+        background: rgba(42, 42, 42, 0.831372549);
+        padding: 10px 20px;
+        width: max-content;
+        margin: auto;
+        border-radius: 30px;
+        margin-top: -107px;
+        margin-bottom: 39px;    
+      }
+  
+      p {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+        line-height: 1.5;
+      }
+  
+      form {
+        .input-group {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 40px;
+          margin-bottom: 50px;
+  
+          input {
+            flex: 1;
+            padding: 20px;
+            font-size: 1.6rem;
+            border: none;
+            border-radius: 15px;
+            outline: none;
+            background: black;
+            color: #e7e6e6;
+  
+            &::placeholder {
+              color: #aaaaaa;
+            }
+          }
+        }
+  
+        button {
+            padding: 10px 60px;
+            font-size: 1.6rem;
+            color: #ffffff;
+            background: black;
+            border: 1px solid #c8c8c8;
+            border-radius: 15px;
+            cursor: pointer;
+            transition: background 0.3s ease;
+            &:hover {
+                background: #f0f0f0;
+                color: black;
+            }
+        }
+      }
+    }
+  }
+  
+/* Responsive Design for Small Screens (Phones) */
+@media (max-width: 768px) {
+  .contact-us-container {
+    .form-wrapper {
+      padding: 30px;
+
+      h1 {
+        font-size: 1.5rem;
+        margin-top: -70px;
+      }
+
+      p {
+        font-size: 0.9rem;
+      }
+
+      form {
+        .input-group {
+          gap: 10px;
+
+          input {
+            font-size: 1.2rem;
+            padding: 12px;
+          }
+        }
+
+        button {
+          font-size: 1.2rem;
+          padding: 8px 40px;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Design for Extra Small Screens */
+@media (max-width: 480px) {
+  .contact-us-container {
+    .form-wrapper {
+      padding: 20px;
+
+      h1 {
+        font-size: 1rem;
+        margin-top: -50px;
+        line-height: 22px;
+        width: 85%;
+      }
+
+      p {
+        font-size: 0.8rem;
+      }
+
+      form {
+        .input-group {
+          gap: 5px;
+
+          input {
+            font-size: 1rem;
+            padding: 10px;
+          }
+        }
+
+        button {
+          font-size: 1rem;
+          padding: 6px 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,40 @@
+.landing-page {
+    .roadmap {
+        width: 100%;
+        background-color: #0f1016;
+        img {
+            width: 100%;
+        }
+    }
+    .future-container {
+        background-color: #0f1016;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-bottom: 100px;
+      
+        .future-text {
+          display: inline-block;
+          font-size: 1.5rem;
+          font-weight: bold;
+          color: #f5c518; /* Gold-like color */
+          border: 1px solid #f5c518;
+          border-radius: 15px;
+          padding: 15px 30px;
+          text-align: center;
+          transition: transform 0.3s ease, background-color 0.3s ease;
+      
+          .arrow {
+            font-size: 1.5rem;
+            margin-left: 10px;
+          }
+      
+          &:hover {
+            background-color: #f5c518;
+            color: #121212;
+            transform: scale(1.05);
+          }
+        }
+      }
+      
+}

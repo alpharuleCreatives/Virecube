@@ -1,8 +1,8 @@
 .button {
   font-family: "Montserrat", sans-serif;
-  font-size: 0.675rem;
+  font-size: 0.875rem;
   font-weight: 700;
-  width: 10rem;
+  width: 14rem;
   line-height: 0.75rem;
   letter-spacing: 0.2px;
   text-align: center;
@@ -10,8 +10,8 @@
   background: #da295d;
   border: 1px solid #fff;
   border-radius: 20px;
-  padding: 0.625rem 0.25rem;
-  box-shadow: 0px 0px 19.83px 5.95px rgba(218, 41, 93, 0.7);
+  padding: 0.825rem 0.25rem;
+  box-shadow: 0px 0px 15.83px 5.95px rgba(228, 228, 228, 0.269);
   cursor: pointer;
   transition: background 0.3s, transform 0.2s;
   
@@ -25,4 +25,56 @@
       transform: scale(0.95); /* Press effect */
     }
   }
+
+  // Styles for the "Learn More" button
+.btn-learn-more {
+  background: #030406;
+  color: #FFB801;
+  border: 1px solid #FFB801;
+  width: 9rem;
+
+  &:hover {
+    background: #0056b3; /* Darker shade of blue on hover */
+    color: #fff;
+  }
+  // Responsive design
+@media (max-width: 1200px) {
+  .button {
+    width: 12rem; /* Reduce button width */
+    font-size: 0.85rem; /* Slightly smaller font */
+    padding: 0.75rem 0.25rem; /* Adjust padding */
+  }
+
+  .btn-learn-more {
+    width: 8rem; /* Reduce width of learn-more button */
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .button {
+    width: 10rem; /* Further reduce button width */
+    font-size: 0.8rem; /* Smaller font */
+    padding: 0.7rem 0.2rem;
+  }
+
+  .btn-learn-more {
+    width: 7.5rem; /* Adjust for smaller screens */
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .button {
+    width: 8.5rem; /* Compact button for very small screens */
+    font-size: 0.75rem;
+    padding: 0.6rem 0.2rem;
+  }
+
+  .btn-learn-more {
+    width: 7rem;
+    font-size: 0.7rem;
+  }
+}
+}
   

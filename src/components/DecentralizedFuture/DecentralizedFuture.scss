@@ -1,0 +1,338 @@
+.decentralized-container {
+  background-color: #121212;
+  display: flex;
+  padding: 150px 5px 0px;
+  height: 700px;
+  font-family: system-ui;
+
+  .decentralized-container-inner-upper-outer-logo {
+    flex: 1;
+    height: 100%;
+
+    .left-section {
+      height: 100%;
+      display: flex;
+      justify-content: end;
+
+      img {
+        height: 100%;
+      }
+    }
+  }
+
+  .decentralized-container-inner-upper-outer-content {
+    flex: 5;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+
+    .decentralized-container-inner-upper {
+      display: flex;
+      background-color: #121212;
+
+      .decentralized-container-inner-upper2 {
+        display: flex;
+        flex: 5;
+
+        .section-left {
+          flex: 1;
+          background: white;
+          border-top-left-radius: 15px;
+          border-top-right-radius: 15px;
+        }
+
+        .section-right {
+          flex: 4 1;
+
+          .section-right-inner {
+            font-size: 3rem;
+            letter-spacing: 2px;
+            font-weight: 700;
+            color: #121212;
+            margin-bottom: 1.5rem;
+            text-align: center;
+            -webkit-text-stroke: 1px #ffffff;
+            -webkit-text-fill-color: #121212;
+            text-stroke: 1px #ffffff;
+
+            .highlight {
+              -webkit-text-fill-color: #ffffff;
+            }
+          }
+        }
+      }
+
+      .decentralized-container-inner-upper3 {
+        flex: 1;
+      }
+    }
+  }
+
+  .decentralized-container-inner {
+    display: flex;
+    flex-direction: row;
+    background-color: #121212;
+    color: #ffffff;
+    padding: 0px;
+    flex-grow: 1;
+
+    .left-section {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      font-size: 2.5rem;
+      font-weight: bold;
+      color: #ffffff;
+      text-transform: uppercase;
+
+      h2 {
+        margin: 0;
+      }
+    }
+
+    .right-section {
+      flex: 5;
+      background-color: #ffffff;
+      border-radius: 15px;
+      border-top-left-radius: 0px;
+      padding: 40px;
+      color: #000;
+
+      h1 {
+        font-size: 2.5rem;
+        font-weight: bold;
+
+        .highlight {
+          color: #121212;
+        }
+      }
+
+      .intro-text {
+        font-size: clamp(2.6rem, 5vw, 25px);
+        margin-top: 0px;
+        font-weight: 600;
+      }
+
+      .description {
+        font-size: 1.3rem;
+        margin-top: 10px;
+        font-weight: 600;
+        width: 92%;    
+      }
+
+      .sub-heading {
+        font-size: 38px;
+        font-weight: bold;
+        margin-top: 30px;
+      }
+
+      .features {
+        list-style-type: none;
+        padding: 0;
+        margin-top: 20px;
+
+        li {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 20px 0;
+            position: relative;
+            padding-left: 20px;
+
+          &:before {
+            content: "◆";
+            position: absolute;
+            left: 0;
+            color: #121212;
+            font-size: 1.2rem;
+          }
+        }
+      }
+
+      .learn-more {
+        margin-top: 30px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        font-weight: bold;
+        color: #121212;
+        background-color: transparent;
+        border: 2px solid #121212;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        &:hover {
+          background-color: #121212;
+          color: #ffffff;
+        }
+      }
+    }
+  }
+
+  .decentralized-container-inner3 {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+
+    .blob {
+      width: 100%;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      margin-bottom: 120px;
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
+/* Responsive Design */
+
+/* For tablets and medium screens (max-width: 1200px) */
+@media (max-width: 1200px) {
+  .decentralized-container {
+    padding: 100px 10px;
+    height: auto;
+
+    .decentralized-container-inner-upper-outer-logo {
+      .left-section {
+        justify-content: center;
+        img {
+          height: auto;
+          max-width: 80%;
+        }
+      }
+    }
+
+    .decentralized-container-inner-upper-outer-content {
+      margin-left: 5px;
+
+      .decentralized-container-inner-upper {
+        flex-direction: column;
+
+        .decentralized-container-inner-upper2 {
+          flex-direction: column;
+
+          .section-left {
+            width: 100%;
+          }
+
+          .section-right {
+            .section-right-inner {
+              font-size: 2.5rem;
+            }
+          }
+        }
+
+        .decentralized-container-inner-upper3 {
+          display: none;
+        }
+      }
+    }
+
+    .decentralized-container-inner {
+      .left-section {
+        font-size: 2rem;
+      }
+
+      .right-section {
+        padding: 30px;
+
+        h1 {
+          font-size: 2.2rem;
+        }
+
+        .description {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}
+
+/* For smaller tablets and large mobile screens (max-width: 768px) */
+@media (max-width: 768px) {
+  .decentralized-container {
+    flex-direction: column;
+    padding: 50px 10px;
+
+    .decentralized-container-inner-upper-outer-logo {
+      .left-section {
+        display: none; /* Hide left section completely */
+      }
+    }
+
+    .decentralized-container-inner-upper-outer-content {
+      .decentralized-container-inner-upper {
+        .decentralized-container-inner-upper2 {
+          .section-right {
+            .section-right-inner {
+              font-size: 2rem;
+            }
+          }
+        }
+      }
+    }
+
+    .decentralized-container-inner {
+      .right-section {
+        h1 {
+          font-size: 1.8rem;
+        }
+
+        .intro-text {
+          font-size: 1.15rem;
+        }
+
+        .description {
+          font-size: 1rem;
+        }
+
+        .features li {
+          font-size: 0.85rem;
+        }
+
+        .learn-more {
+          font-size: 0.9rem;
+          padding: 8px 15px;
+        }
+      }
+    }
+  }
+}
+
+/* For small mobile screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .decentralized-container {
+    padding: 30px 5px;
+
+    .decentralized-container-inner {
+      .right-section {
+        padding: 20px;
+
+        h1 {
+          font-size: 1.5rem;
+        }
+
+        .intro-text {
+          font-size: 1rem;
+        }
+
+        .description {
+          font-size: 0.9rem;
+        }
+
+        .features li {
+          font-size: 0.8rem;
+        }
+
+        .learn-more {
+          font-size: 0.8rem;
+          padding: 6px 12px;
+        }
+      }
+    }
+  }
+}

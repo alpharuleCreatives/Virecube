@@ -1,0 +1,92 @@
+.why-virecube-container {
+  position: relative;
+  background-color: #121212;
+  color: #ffffff;
+  padding: 60px 20px;
+  text-align: center;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-position: center;
+  background-image: url('../../assets/images/whyVirecubebg.png');
+
+  .content {
+    position: relative;
+    z-index: 2;
+
+    .heading-virecubewhy {
+      font-size: 3.5rem;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+      font-weight: 500;
+      letter-spacing: 0.2px;
+    }
+
+    .intro {
+      font-size: 1.3rem;
+      line-height: 1.6;
+      max-width: 800px;
+      margin: auto;
+      margin-top: 22px;
+    }
+
+    .features {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding-top: 35px;
+
+      .feature {
+        // background-color: #1e1e1e;
+        padding: 20px;
+        border-radius: 10px;
+        width: 250px;
+        text-align: center;
+        // box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+
+        .icon {
+          width: 125px;
+          margin-bottom: 15px;
+          margin: auto;
+          height: 130px;
+          margin-bottom: 35px;      
+          img{
+            width: 100%;
+          }
+        }
+
+        h3 {
+          font-size: 1.9rem;
+          font-weight: 600;
+          margin-bottom: 10px;
+          letter-spacing: 2px;
+        }
+
+        p {
+          font-size: 1.3rem;
+          line-height: 1.4;
+          color: #FFFFFF;
+        }
+      }
+    }
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .features {
+    flex-direction: column;
+    align-items: center;
+
+    .feature {
+      width: 100%;
+      max-width: 300px;
+    }
+  }
+}
