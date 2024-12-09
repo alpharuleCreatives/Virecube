@@ -6,6 +6,11 @@ import FacebookLogo from "../../../assets/images/fb-logo.svg";
 import Button from '../../common/Button/Button';
 
 const Footer = () => {
+
+  const handleAppointmentClick = () => {
+    window.open('https://calendly.com/rahul-factorwise', '_blank', 'noopener,noreferrer');
+  };
+
   return (
     <footer className="footer">
       {/* Main Wrapper */}
@@ -56,9 +61,9 @@ const Footer = () => {
             <div className="footer__contact">
               <div className="footer__contact-title">Contact Info:
               </div>
-              <div className="footer__contact-info">hello@virecube.com | +123-456-7890 </div>
+              <div className="footer__contact-info">connect@virecube.com </div>
              
-              <Button text="Book an Appointment" />
+              <Button text="Book an Appointment" onClick={handleAppointmentClick}/>
             </div>
           </div>
 

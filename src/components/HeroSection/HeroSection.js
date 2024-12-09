@@ -3,6 +3,10 @@ import Button from "../common/Button/Button";
 import "./HeroSection.scss";
 
 const HeroSection = () => {
+  const handleAppointmentClick = () => {
+    window.open('https://calendly.com/rahul-factorwise', '_blank', 'noopener,noreferrer');
+  };
+  
   return (
     <section className="hero-section">
       <div className="hero-content">
@@ -16,7 +20,7 @@ const HeroSection = () => {
           business success.
         </h4>
         <div className="hero-buttons">
-          <Button text="Book an Appointment" />
+          <Button text="Book an Appointment"  onClick={handleAppointmentClick} />
           <Button text="Learn More" className="btn-learn-more" />
         </div>
       </div>
