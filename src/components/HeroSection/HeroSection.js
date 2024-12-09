@@ -4,7 +4,7 @@ import "./HeroSection.scss";
 
 const HeroSection = () => {
   const handleAppointmentClick = () => {
-    window.open('https://calendly.com/rahul-factorwise', '_blank', 'noopener,noreferrer');
+    window.open('https://calendly.com/connect-virecube', '_blank', 'noopener,noreferrer');
   };
   
   return (
