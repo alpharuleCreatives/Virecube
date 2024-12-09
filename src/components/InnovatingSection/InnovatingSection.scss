@@ -29,21 +29,27 @@
       flex-grow: 1;
       flex: 1 1;
       max-width: 400px;
-      border: 2px solid #ffffff;
+      width: 100%;
+      // border: 1px solid #ffffff;
       border-radius: 20px;
       box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
       position: relative;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 10px;
-        left: 10px;
-        right: 10px;
-        bottom: 10px;
-        background-color: #e0e0e0;
-        border-radius: 15px;
-      }
+      background-image: url("../../assets/images/innovating_virecube.png");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      height: 100dvh;
+      // &::before {
+      //   content: "";
+      //   position: absolute;
+      //   top: 10px;
+      //   left: 10px;
+      //   right: 10px;
+      //   bottom: 10px;
+      //   background-size: cover;
+      //   background-position: center;
+      //   border-radius: 15px;
+      // }
     }
 
     .features {
@@ -71,18 +77,18 @@
         }
 
         .feature-title {
-          font-size: 1.9rem;
+          font-size: 1.6rem;
           letter-spacing: 2px;
           font-weight: 700;
-          margin-top: 5px;
-          margin-bottom: 5px;
+          margin-top: 2px;
+          margin-bottom: 1px;
         }
 
         .feature-description {
-          font-size: 1.5rem;
+          font-size: 1.4rem;
           margin-bottom: 15px;
-          line-height: 1.2;
-          color: #FFFFFF;
+          line-height: 1.1;
+          color: #ffffff;
           font-weight: 500;
         }
 
@@ -128,91 +134,91 @@
       }
     }
   }
- /* Responsive Design for Tablets */
- @media (max-width: 1200px) {
-  padding: 50px 40px;
+  /* Responsive Design for Tablets */
+  @media (max-width: 1200px) {
+    padding: 50px 40px;
 
-  h1 {
-    font-size: 2rem;
-    text-align: center;
-  }
+    h1 {
+      font-size: 2rem;
+      text-align: center;
+    }
 
-  .content {
-    .features {
-      .feature-card {
-        padding: 15px;
-        .feature-title {
-          font-size: 1.8rem;
-        }
-        .feature-description {
-          font-size: 1.4rem;
+    .content {
+      .features {
+        .feature-card {
+          padding: 15px;
+          .feature-title {
+            font-size: 1.8rem;
+          }
+          .feature-description {
+            font-size: 1.4rem;
+          }
         }
       }
     }
   }
-}
 
-/* Responsive Design for Medium Screens */
-@media (max-width: 768px) {
-  padding: 40px 20px;
+  /* Responsive Design for Medium Screens */
+  @media (max-width: 768px) {
+    padding: 40px 20px;
 
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  .content {
-    flex-direction: column;
-
-    .placeholder-box {
-      width: 100%;
-      max-width: 300px;
-      height: 300px;
+    h1 {
+      font-size: 1.8rem;
     }
 
-    .features {
-      .feature-card {
+    .content {
+      flex-direction: column;
+
+      .placeholder-box {
         width: 100%;
-        max-width: 400px;
+        max-width: 300px;
+        height: 300px;
+      }
 
-        .feature-title {
-          font-size: 1.6rem;
-        }
+      .features {
+        .feature-card {
+          width: 100%;
+          max-width: 400px;
 
-        .feature-description {
-          font-size: 1.2rem;
+          .feature-title {
+            font-size: 1.6rem;
+          }
+
+          .feature-description {
+            font-size: 1.2rem;
+          }
         }
       }
     }
   }
-}
 
-/* Responsive Design for Small Screens */
-@media (max-width: 480px) {
-  padding: 20px 10px;
+  /* Responsive Design for Small Screens */
+  @media (max-width: 480px) {
+    padding: 20px 10px;
 
-  h1 {
-    font-size: 1.8rem;
-  }
-
-  .content {
-    .placeholder-box {
-      height: 250px;
+    h1 {
+      font-size: 1.8rem;
     }
 
-    .features {
-      .feature-card {
-        padding: 10px;
-        max-width: 280px;
-        .feature-title {
-          font-size: 1.2rem;
-        margin-top: 20px;
-        }
-        .feature-description {
-          font-size: 0.8rem;
-          margin-bottom: 25px;  
+    .content {
+      .placeholder-box {
+        height: 250px;
+      }
+
+      .features {
+        .feature-card {
+          padding: 10px;
+          max-width: 280px;
+          .feature-title {
+            font-size: 1.2rem;
+            margin-top: 20px;
+          }
+          .feature-description {
+            font-size: 0.8rem;
+            margin-bottom: 25px;
+          }
         }
       }
     }
   }
-}
 }

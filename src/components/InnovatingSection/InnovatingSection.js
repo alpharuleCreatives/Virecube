@@ -1,5 +1,5 @@
 import React from "react";
-import Bolt from "../../assets/images/bolt.png"
+import InnovatingImage from "../../assets/images/innovating_virecube.png"
 import "./InnovatingSection.scss";
 
 const features = [
@@ -30,8 +30,8 @@ const InnovatingSection = () => {
       <h1>Innovating Today, Leading Tomorrow!</h1>
       <div className="content">
         <div className="placeholder-box">
-          {/* Placeholder for an image or video */}
-        </div>
+          {/* <img src={InnovatingImage} alt="innovating-virecube_image"/> */}
+        </div> 
         <div className="features">
           {features.map((feature, index) => (
             <div className="feature-card" key={index}>
